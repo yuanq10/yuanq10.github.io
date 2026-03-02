@@ -5,6 +5,7 @@
 }
 
 section {
+  text-align: center; /* makes headings and paragraphs centered */
   margin-bottom: 60px;  /* space between sections */
 }
 
