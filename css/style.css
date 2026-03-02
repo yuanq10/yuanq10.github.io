@@ -1,43 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container {
+  max-width: 1000px;  /* content won’t stretch too wide */
+  margin: 0 auto;      /* centers horizontally */
+  padding: 0 20px;     /* small space on sides for mobile */
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
-  line-height: 1.6;
+section {
+  margin-bottom: 60px;  /* space between sections */
 }
 
-header {
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 2rem;
+h1, h2 {
+  margin-bottom: 10px;  /* space below headings */
 }
 
-nav a {
-  margin-right: 1.5rem;
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #555;
+p {
+  margin-bottom: 15px;  /* space below paragraphs */
 }
