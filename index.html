@@ -64,10 +64,59 @@
   </section>
 
   <!-- Projects -->
-   <section>
+  <section class="projects">
     <div class="container">
-      
+      <h2>Projects</h2>
+
+      <div class="projects-layout">
+
+        <!-- LEFT: project list -->
+        <div class="projects-list">
+          <button class="project-item active" data-project="0">
+            <span class="project-title">Virtual Coach</span>
+            <span class="project-tech text-sm">Python · Pose Tracking · AI</span>
+          </button>
+
+          <button class="project-item" data-project="1">
+            <span class="project-title">Memory Simulator</span>
+            <span class="project-tech text-sm">C · Paging · TLB</span>
+          </button>
+
+          <button class="project-item" data-project="2">
+            <span class="project-title">Temperature Control</span>
+            <span class="project-tech text-sm">Control Systems · MATLAB</span>
+          </button>
+
+          <!-- Add more projects -->
+        </div>
+
+        <!-- RIGHT: project display -->
+        <div class="projects-display">
+          <div class="project-detail active" data-project="0">
+            <img src="{{ url_for('static', filename='projects/virtual_coach.png') }}" alt="Virtual Coach">
+            <p>
+              A dragon boat virtual coaching system that analyzes athlete motion using pose tracking and
+              provides real-time technique feedback.
+            </p>
+          </div>
+
+          <div class="project-detail" data-project="1">
+            <img src="{{ url_for('static', filename='projects/memory_sim.png') }}" alt="Memory Simulator">
+            <p>
+              A C-based memory management simulator implementing paging, TLB lookup, and demand paging.
+            </p>
+          </div>
+
+          <div class="project-detail" data-project="2">
+            <img src="{{ url_for('static', filename='projects/temp_control.png') }}" alt="Temperature Control">
+            <p>
+              Simulation and optimization of a bang-bang temperature controller under varying ambient conditions.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
-   </section>
+  </section>
 </body>
 </html>
