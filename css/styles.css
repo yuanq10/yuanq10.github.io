@@ -229,6 +229,111 @@ ul {
   gap: 36px;
 }
 
+/* Nav right-side actions (lang dropdown + hamburger) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Language dropdown */
+.lang-dropdown-wrapper {
+  position: relative;
+}
+
+.lang-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 10px 5px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+.lang-dropdown-btn:hover,
+.lang-dropdown-btn[aria-expanded="true"] {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.lang-chevron {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.lang-dropdown-btn[aria-expanded="true"] .lang-chevron {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  min-width: 148px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  z-index: 200;
+  list-style: none;
+}
+
+.lang-dropdown-menu.open {
+  display: block;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-align: left;
+  transition: all var(--transition);
+}
+
+.lang-option:hover {
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+.lang-option.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.lang-option-short {
+  font-weight: 600;
+  min-width: 24px;
+}
+
+.lang-option-long {
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
 .nav-links a {
   font-size: 0.9rem;
   font-weight: 500;
@@ -801,6 +906,10 @@ footer p {
   }
 
   /* Nav */
+  .nav-actions {
+    gap: 8px;
+  }
+
   .nav-toggle {
     display: flex;
   }

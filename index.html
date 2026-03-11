@@ -15,16 +15,47 @@
   <nav id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">LY</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"      data-i18n="nav-about">About</a></li>
+        <li><a href="#projects"   data-i18n="nav-projects">Projects</a></li>
+        <li><a href="#experience" data-i18n="nav-experience">Experience</a></li>
+        <li><a href="#education"  data-i18n="nav-education">Education</a></li>
+        <li><a href="#contact"    data-i18n="nav-contact">Contact</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <!-- Language dropdown -->
+        <div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper">
+          <button class="lang-dropdown-btn" id="lang-dropdown-btn"
+                  aria-expanded="false" aria-haspopup="listbox">
+            <span id="lang-current">EN</span>
+            <svg class="lang-chevron" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <ul class="lang-dropdown-menu" role="listbox" id="lang-dropdown-menu">
+            <li>
+              <button class="lang-option active" data-lang="en" role="option">
+                <span class="lang-option-short">EN</span>
+                <span class="lang-option-long">English</span>
+              </button>
+            </li>
+            <li>
+              <button class="lang-option" data-lang="zh" role="option">
+                <span class="lang-option-short">中文</span>
+                <span class="lang-option-long">简体中文</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -34,13 +65,17 @@
       <div class="hero-photo-wrapper">
         <img src="assets/Logan_Photo.jpg" alt="Logan Yuan" class="hero-photo" />
       </div>
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Logan Yuan</h1>
-      <p class="hero-title">Software &amp; Biomedical Engineering Graduate</p>
+      <p class="hero-greeting" data-i18n="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name" data-i18n="hero-name">Logan Yuan</h1>
+      <p class="hero-title" data-i18n="hero-title">Software &amp; Biomedical Engineering Graduate</p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
-        <a href="assets/Logan_Yuan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Download Resume</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero-btn-projects">View Projects</a>
+        <a href="#contact"  class="btn btn-outline" data-i18n="hero-btn-contact">Contact Me</a>
+        <a href="assets/Logan_Yuan_Resume.pdf" target="_blank" rel="noopener noreferrer"
+           class="btn btn-ghost"
+           data-i18n="hero-btn-resume"
+           data-href-en="assets/Logan_Yuan_Resume.pdf"
+           data-href-zh="assets/Jianli.pdf">Download Resume</a>
       </div>
     </div>
     <div class="hero-bg-orbs">
@@ -52,15 +87,15 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title" data-i18n="about-title">About Me</h2>
       <div class="about-grid">
         <div class="about-bio">
-          <p>
+          <p data-i18n="about-bio-1">
             I'm a recent graduate from <strong>McMaster University</strong> with a Bachelor's degree in
             Software and Biomedical Engineering. I'm passionate about developing intelligent software
             systems that automates various daily processes — with a focus on making real-world impact.
           </p>
-          <p>
+          <p data-i18n="about-bio-2">
             I hold a <strong>Microsoft Azure AI Fundamentals (AI-900)</strong> certification and have
             experience with cloud platforms, machine learning frameworks, and full-stack
             development. I'm eager to bring my interdisciplinary background to a software engineering role.
@@ -68,7 +103,7 @@
         </div>
         <div class="about-skills">
           <div class="skill-group">
-            <h3 class="skill-group-title">Languages</h3>
+            <h3 class="skill-group-title" data-i18n="skills-languages">Languages</h3>
             <div class="skill-tags">
               <span class="tag">Python</span>
               <span class="tag">Java</span>
@@ -79,7 +114,7 @@
             </div>
           </div>
           <div class="skill-group">
-            <h3 class="skill-group-title">Tools &amp; Frameworks</h3>
+            <h3 class="skill-group-title" data-i18n="skills-tools">Tools &amp; Frameworks</h3>
             <div class="skill-tags">
               <span class="tag">Git</span>
               <span class="tag">Azure</span>
@@ -90,12 +125,12 @@
             </div>
           </div>
           <div class="skill-group">
-            <h3 class="skill-group-title">Certification</h3>
+            <h3 class="skill-group-title" data-i18n="skills-cert">Certification</h3>
             <div class="cert-badge">
               <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
-              <span>Microsoft Certified: Azure AI Fundamentals (AI-900)</span>
+              <span data-i18n="cert-text">Microsoft Certified: Azure AI Fundamentals (AI-900)</span>
             </div>
           </div>
         </div>
@@ -106,7 +141,7 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title" data-i18n="projects-title">Projects</h2>
       <div class="projects-grid">
 
         <!-- Project 1 -->
@@ -115,7 +150,7 @@
             <h3 class="project-title">Gomoku (Connect 5)</h3>
             <span class="project-period">Mar 2026</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj1-desc">
             A browser-based Gomoku game built with React. Features both Player vs Player and Player
             vs Computer modes. The AI uses minimax with alpha-beta pruning, scanning candidate moves
             near existing stones and evaluating board patterns to look 2 moves ahead.
@@ -131,7 +166,7 @@
               <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
               </svg>
-              View on GitHub
+              <span data-i18n="github-link">View on GitHub</span>
             </a>
           </div>
         </article>
@@ -142,7 +177,7 @@
             <h3 class="project-title">Stock Tracker</h3>
             <span class="project-period">Dec 2025 – Mar 2026</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj2-desc">
             A desktop stock monitoring application that scans a watchlist and generates buy/sell alerts
             based on technical analysis. Combines CCI, MACD, KDJ, and 100+ TA-Lib indicators with
             customizable thresholds, interactive price charts, and background processing — packaged as
@@ -160,7 +195,7 @@
               <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
               </svg>
-              View on GitHub
+              <span data-i18n="github-link">View on GitHub</span>
             </a>
           </div>
         </article>
@@ -171,7 +206,7 @@
             <h3 class="project-title">Job Searching Agent</h3>
             <span class="project-period">Sep 2025 – Mar 2026</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj3-desc">
             A desktop application that automates job hunting across LinkedIn, Indeed, and Glassdoor.
             Uses Playwright for headless browser scraping and the JSearch API for aggregation, then
             filters results through a configurable pipeline — including AI filtering via Claude or
@@ -189,7 +224,7 @@
               <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
               </svg>
-              View on GitHub
+              <span data-i18n="github-link">View on GitHub</span>
             </a>
           </div>
         </article>
@@ -199,11 +234,11 @@
           <div class="project-header">
             <h3 class="project-title">
               Yi Xian Damage Calculator
-              <span class="badge-inprogress">In Progress</span>
+              <span class="badge-inprogress" data-i18n="badge-inprogress">In Progress</span>
             </h3>
             <span class="project-period">2025 – Present</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj4-desc">
             A hotkey-triggered overlay tool for the card game Yi Xian (奕仙). Press F9 while the
             deck screen is visible — the tool captures a screenshot, reads card names via Tesseract
             OCR, simulates 8 turns of combat, and displays a damage breakdown overlay in real time.
@@ -215,7 +250,7 @@
             <span class="tag tag-tech">PyAutoGUI</span>
           </div>
           <div class="project-footer">
-            <span class="no-link-note">Repository not publicly available</span>
+            <span class="no-link-note" data-i18n="no-repo">Repository not publicly available</span>
           </div>
         </article>
 
@@ -225,7 +260,7 @@
             <h3 class="project-title">Virtual Dragon Boat Coach</h3>
             <span class="project-period">Sep 2024 – Apr 2025</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj5-desc">
             A coaching tool that analyzes dragon boat paddling biomechanics using OpenCap motion
             capture data. Provides real-time feedback and performance insights through a Flask web interface.
           </p>
@@ -242,7 +277,7 @@
               <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
               </svg>
-              View on GitHub
+              <span data-i18n="github-link">View on GitHub</span>
             </a>
           </div>
         </article>
@@ -253,7 +288,7 @@
             <h3 class="project-title">Neck Pain (NSNP) Monitor</h3>
             <span class="project-period">Dec 2022 – Apr 2023</span>
           </div>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj6-desc">
             A hardware-software system for real-time monitoring neck posture and detecting non-specific neck pain
             indicators. Built with Arduino sensors, C and Python-based data processing.
           </p>
@@ -264,7 +299,7 @@
             <span class="tag tag-tech">Autodesk Inventor</span>
           </div>
           <div class="project-footer">
-            <span class="no-link-note">Repository not publicly available</span>
+            <span class="no-link-note" data-i18n="no-repo">Repository not publicly available</span>
           </div>
         </article>
 
@@ -275,21 +310,21 @@
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="container">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title" data-i18n="exp-title">Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">International Business Office Assistant</h3>
-                <p class="timeline-org">Kunming Diboo Technology Inc.</p>
+                <h3 class="timeline-role" data-i18n="exp-role">International Business Office Assistant</h3>
+                <p class="timeline-org" data-i18n="exp-org">Kunming Diboo Technology Inc.</p>
               </div>
               <span class="timeline-period">July 2023 – August 2023</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Designed the corporation brochure for international business operations.</li>
-              <li>Provided on-site guidance to customers, explaining the functionality and 
+              <li data-i18n="exp-bullet-1">Designed the corporation brochure for international business operations.</li>
+              <li data-i18n="exp-bullet-2">Provided on-site guidance to customers, explaining the functionality and
                   operating principles of metallurgical equipment.</li>
             </ul>
           </div>
@@ -301,7 +336,7 @@
   <!-- EDUCATION -->
   <section id="education">
     <div class="container">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title" data-i18n="edu-title">Education</h2>
       <div class="edu-card">
         <div class="edu-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -310,8 +345,8 @@
           </svg>
         </div>
         <div class="edu-info">
-          <h3 class="edu-degree">Bachelor of Software and Biomedical Engineering</h3>
-          <p class="edu-school">McMaster University</p>
+          <h3 class="edu-degree" data-i18n="edu-degree">Bachelor of Software and Biomedical Engineering</h3>
+          <p class="edu-school" data-i18n="edu-school">McMaster University</p>
           <span class="edu-period">September 2020 – June 2025</span>
         </div>
       </div>
@@ -321,12 +356,12 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-intro">
+      <h2 class="section-title" data-i18n="contact-title">Get In Touch</h2>
+      <p class="contact-intro" data-i18n="contact-intro">
         I'm currently open to software engineering opportunities. Whether you have a question,
         a role in mind, or just want to connect — my inbox is always open.
       </p>
-      <a href="mailto:loganyuan6@gmail.com" class="btn btn-primary btn-lg">Send Me an Email</a>
+      <a href="mailto:loganyuan6@gmail.com" class="btn btn-primary btn-lg" data-i18n="contact-btn">Send Me an Email</a>
       <div class="contact-links">
         <a href="mailto:loganyuan6@gmail.com" class="contact-link" aria-label="Email">
           <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -362,11 +397,167 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 Logan Yuan. Built with HTML &amp; CSS.</p>
+      <p data-i18n="footer-text">&copy; 2026 Logan Yuan. Built with HTML &amp; CSS.</p>
     </div>
   </footer>
 
   <script>
+    // =====================
+    // TRANSLATIONS
+    // =====================
+    const translations = {
+      en: {
+        'nav-about':         'About',
+        'nav-projects':      'Projects',
+        'nav-experience':    'Experience',
+        'nav-education':     'Education',
+        'nav-contact':       'Contact',
+        'hero-greeting':     "Hi, I'm",
+        'hero-name':         'Logan Yuan',
+        'hero-title':        'Software &amp; Biomedical Engineering Graduate',
+        'hero-btn-projects': 'View Projects',
+        'hero-btn-contact':  'Contact Me',
+        'hero-btn-resume':   'Download Resume',
+        'about-title':       'About Me',
+        'about-bio-1':       "I'm a recent graduate from <strong>McMaster University</strong> with a Bachelor's degree in Software and Biomedical Engineering. I'm passionate about developing intelligent software systems that automates various daily processes — with a focus on making real-world impact.",
+        'about-bio-2':       "I hold a <strong>Microsoft Azure AI Fundamentals (AI-900)</strong> certification and have experience with cloud platforms, machine learning frameworks, and full-stack development. I'm eager to bring my interdisciplinary background to a software engineering role.",
+        'skills-languages':  'Languages',
+        'skills-tools':      'Tools &amp; Frameworks',
+        'skills-cert':       'Certification',
+        'cert-text':         'Microsoft Certified: Azure AI Fundamentals (AI-900)',
+        'projects-title':    'Projects',
+        'proj1-desc':        'A browser-based Gomoku game built with React. Features both Player vs Player and Player vs Computer modes. The AI uses minimax with alpha-beta pruning, scanning candidate moves near existing stones and evaluating board patterns to look 2 moves ahead.',
+        'proj2-desc':        'A desktop stock monitoring application that scans a watchlist and generates buy/sell alerts based on technical analysis. Combines CCI, MACD, KDJ, and 100+ TA-Lib indicators with customizable thresholds, interactive price charts, and background processing — packaged as a standalone Windows executable.',
+        'proj3-desc':        'A desktop application that automates job hunting across LinkedIn, Indeed, and Glassdoor. Uses Playwright for headless browser scraping and the JSearch API for aggregation, then filters results through a configurable pipeline — including AI filtering via Claude or ChatGPT — before displaying live results in a table UI with applied-job tracking.',
+        'proj4-desc':        'A hotkey-triggered overlay tool for the card game Yi Xian (奕仙). Press F9 while the deck screen is visible — the tool captures a screenshot, reads card names via Tesseract OCR, simulates 8 turns of combat, and displays a damage breakdown overlay in real time.',
+        'badge-inprogress':  'In Progress',
+        'proj5-desc':        'A coaching tool that analyzes dragon boat paddling biomechanics using OpenCap motion capture data. Provides real-time feedback and performance insights through a Flask web interface.',
+        'proj6-desc':        'A hardware-software system for real-time monitoring neck posture and detecting non-specific neck pain indicators. Built with Arduino sensors, C and Python-based data processing.',
+        'github-link':       'View on GitHub',
+        'no-repo':           'Repository not publicly available',
+        'exp-title':         'Experience',
+        'exp-role':          'International Business Office Assistant',
+        'exp-org':           'Kunming Diboo Technology Inc.',
+        'exp-bullet-1':      'Designed the corporation brochure for international business operations.',
+        'exp-bullet-2':      'Provided on-site guidance to customers, explaining the functionality and operating principles of metallurgical equipment.',
+        'edu-title':         'Education',
+        'edu-degree':        'Bachelor of Software and Biomedical Engineering',
+        'edu-school':        'McMaster University',
+        'contact-title':     'Get In Touch',
+        'contact-intro':     "I'm currently open to software engineering opportunities. Whether you have a question, a role in mind, or just want to connect — my inbox is always open.",
+        'contact-btn':       'Send Me an Email',
+        'footer-text':       '&copy; 2026 Logan Yuan. Built with HTML &amp; CSS.',
+      },
+      zh: {
+        'nav-about':         '关于我',
+        'nav-projects':      '项目',
+        'nav-experience':    '工作经历',
+        'nav-education':     '教育背景',
+        'nav-contact':       '联系我',
+        'hero-greeting':     '你好，我是',
+        'hero-name':         '袁启航',
+        'hero-title':        '软件与生物医学工程毕业生',
+        'hero-btn-projects': '查看项目',
+        'hero-btn-contact':  '联系我',
+        'hero-btn-resume':   '下载简历',
+        'about-title':       '关于我',
+        'about-bio-1':       '我是<strong>麦克马斯特大学</strong>软件与生物医学工程专业的应届毕业生。我热衷于开发能够自动化各种日常流程的智能软件系统——致力于创造真实世界的影响。',
+        'about-bio-2':       '我持有<strong>微软 Azure AI 基础 (AI-900)</strong> 认证，具备云平台、机器学习框架和全栈开发经验。我渴望将我的跨学科背景带到软件工程岗位中。',
+        'skills-languages':  '编程语言',
+        'skills-tools':      '工具与框架',
+        'skills-cert':       '认证',
+        'cert-text':         '微软认证：Azure AI 基础 (AI-900)',
+        'projects-title':    '项目',
+        'proj1-desc':        '基于 React 构建的浏览器端五子棋游戏，支持双人对战与人机对战模式。AI 采用带 Alpha-Beta 剪枝的 Minimax 算法，通过扫描现有棋子附近的候选位置并评估棋盘格局，实现 2 步前瞻。',
+        'proj2-desc':        '一款桌面股票监控应用，可扫描自选股并基于技术分析生成买卖提醒。集成 CCI、MACD、KDJ 及 100 余种 TA-Lib 指标，支持自定义阈值、交互式价格图表与后台处理——打包为 Windows 独立可执行文件。',
+        'proj3-desc':        '一款自动化求职桌面应用，支持在 LinkedIn、Indeed 和 Glassdoor 上搜索职位。使用 Playwright 进行无头浏览器抓取，通过 JSearch API 聚合数据，经过可配置筛选流程（含 Claude 或 ChatGPT 的 AI 筛选）后，以表格形式实时展示结果，并支持已投递职位追踪。',
+        'proj4-desc':        '一款为卡牌游戏奕仙设计的快捷键触发悬浮工具。在牌组界面按下 F9，工具自动截图、通过 Tesseract OCR 识别卡牌名称、模拟 8 回合战斗，并实时展示伤害分析悬浮窗。',
+        'badge-inprogress':  '进行中',
+        'proj5-desc':        '一款利用 OpenCap 动作捕捉数据分析龙舟划桨生物力学的辅助工具，通过 Flask Web 界面提供实时反馈和运动表现分析。',
+        'proj6-desc':        '一套用于实时监测颈部姿态、检测非特异性颈痛指标的硬件-软件系统，基于 Arduino 传感器，结合 C 语言和 Python 进行数据处理。',
+        'github-link':       '在 GitHub 上查看',
+        'no-repo':           '代码库未公开',
+        'exp-title':         '工作经历',
+        'exp-role':          '国际商务办公室助理',
+        'exp-org':           '昆明鼎邦科技有限公司',
+        'exp-bullet-1':      '为国际商务运营设计公司宣传册。',
+        'exp-bullet-2':      '为客户提供现场指导，讲解冶金设备的功能及操作原理。',
+        'edu-title':         '教育背景',
+        'edu-degree':        '软件与生物医学工程学士',
+        'edu-school':        '麦克马斯特大学',
+        'contact-title':     '联系我',
+        'contact-intro':     '我目前正在寻找软件工程方向的机会。无论您有问题、有合适的职位，还是仅想交流——欢迎随时与我联系。',
+        'contact-btn':       '发送邮件',
+        'footer-text':       '&copy; 2026 袁启航. 使用 HTML 与 CSS 构建。',
+      }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'en';
+
+    function applyLang(lang) {
+      // Swap all text content
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key] !== undefined) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      // Swap language-specific hrefs (e.g. resume PDF)
+      document.querySelectorAll('[data-href-en]').forEach(el => {
+        el.href = lang === 'en'
+          ? el.getAttribute('data-href-en')
+          : el.getAttribute('data-href-zh');
+      });
+
+      // Update dropdown button label
+      document.getElementById('lang-current').textContent = lang === 'en' ? 'EN' : '中文';
+
+      // Update active state on options
+      document.querySelectorAll('.lang-option').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+
+      document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+      localStorage.setItem('lang', lang);
+      currentLang = lang;
+    }
+
+    // Dropdown toggle
+    const dropdownWrapper = document.getElementById('lang-dropdown-wrapper');
+    const dropdownBtn     = document.getElementById('lang-dropdown-btn');
+    const dropdownMenu    = document.getElementById('lang-dropdown-menu');
+
+    dropdownBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = dropdownMenu.classList.contains('open');
+      dropdownMenu.classList.toggle('open', !isOpen);
+      dropdownBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    document.querySelectorAll('.lang-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        applyLang(btn.getAttribute('data-lang'));
+        dropdownMenu.classList.remove('open');
+        dropdownBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close dropdown on outside click
+    document.addEventListener('click', e => {
+      if (!dropdownWrapper.contains(e.target)) {
+        dropdownMenu.classList.remove('open');
+        dropdownBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Apply saved language on load
+    if (currentLang === 'zh') applyLang('zh');
+
+    // =====================
+    // EXISTING SCRIPTS
+    // =====================
+
     // Sticky nav shadow on scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
@@ -374,7 +565,7 @@
     });
 
     // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
+    const toggle   = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     toggle.addEventListener('click', () => {
       const expanded = toggle.getAttribute('aria-expanded') === 'true';
