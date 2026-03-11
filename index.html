@@ -112,24 +112,22 @@
         <!-- Project 1 -->
         <article class="project-card">
           <div class="project-header">
-            <h3 class="project-title">
-              Stock Notification
-              <span class="badge-inprogress">In Progress</span>
-            </h3>
-            <span class="project-period">Dec 2025 – Present</span>
+            <h3 class="project-title">Gomoku (Connect 5)</h3>
+            <span class="project-period">Mar 2026</span>
           </div>
           <p class="project-desc">
-            A Python-based stock monitoring tool that delivers automated notifications when configurable
-            price or trend conditions are triggered. Features a CustomTkinter UI for managing tracked
-            stocks, configuring indicator thresholds, and visualizing stock performance through side-by-side charts.
+            A browser-based Gomoku game built with React. Features both Player vs Player and Player
+            vs Computer modes. The AI uses minimax with alpha-beta pruning, scanning candidate moves
+            near existing stones and evaluating board patterns to look 2 moves ahead.
           </p>
           <div class="project-tags">
-            <span class="tag tag-tech">Python</span>
-            <span class="tag tag-tech">CustomTkinter</span>
-            <span class="tag tag-tech">yfinance</span>
+            <span class="tag tag-tech">React</span>
+            <span class="tag tag-tech">JavaScript</span>
+            <span class="tag tag-tech">Vite</span>
+            <span class="tag tag-tech">CSS Modules</span>
           </div>
           <div class="project-footer">
-            <a href="https://github.com/yuanq10/Stock_Notification" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+            <a href="https://github.com/yuanq10/Gomuku" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
               <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
               </svg>
@@ -139,6 +137,89 @@
         </article>
 
         <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Stock Tracker</h3>
+            <span class="project-period">Dec 2025 – Mar 2026</span>
+          </div>
+          <p class="project-desc">
+            A desktop stock monitoring application that scans a watchlist and generates buy/sell alerts
+            based on technical analysis. Combines CCI, MACD, KDJ, and 100+ TA-Lib indicators with
+            customizable thresholds, interactive price charts, and background processing — packaged as
+            a standalone Windows executable.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-tech">Python</span>
+            <span class="tag tag-tech">CustomTkinter</span>
+            <span class="tag tag-tech">yfinance</span>
+            <span class="tag tag-tech">TA-Lib</span>
+            <span class="tag tag-tech">Matplotlib</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/yuanq10/MarketOpportunityNotifier" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Job Searching Agent</h3>
+            <span class="project-period">Sep 2025 – Mar 2026</span>
+          </div>
+          <p class="project-desc">
+            A desktop application that automates job hunting across LinkedIn, Indeed, and Glassdoor.
+            Uses Playwright for headless browser scraping and the JSearch API for aggregation, then
+            filters results through a configurable pipeline — including AI filtering via Claude or
+            ChatGPT — before displaying live results in a table UI with applied-job tracking.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-tech">Python</span>
+            <span class="tag tag-tech">Playwright</span>
+            <span class="tag tag-tech">Claude API</span>
+            <span class="tag tag-tech">SQLite</span>
+            <span class="tag tag-tech">CustomTkinter</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/yuanq10/JobSearchingAgent" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">
+              Yi Xian Damage Calculator
+              <span class="badge-inprogress">In Progress</span>
+            </h3>
+            <span class="project-period">2025 – Present</span>
+          </div>
+          <p class="project-desc">
+            A hotkey-triggered overlay tool for the card game Yi Xian (奕仙). Press F9 while the
+            deck screen is visible — the tool captures a screenshot, reads card names via Tesseract
+            OCR, simulates 8 turns of combat, and displays a damage breakdown overlay in real time.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-tech">Python</span>
+            <span class="tag tag-tech">Tesseract OCR</span>
+            <span class="tag tag-tech">OpenCV</span>
+            <span class="tag tag-tech">PyAutoGUI</span>
+          </div>
+          <div class="project-footer">
+            <span class="no-link-note">Repository not publicly available</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
         <article class="project-card">
           <div class="project-header">
             <h3 class="project-title">Virtual Dragon Boat Coach</h3>
@@ -166,7 +247,7 @@
           </div>
         </article>
 
-        <!-- Project 3 -->
+        <!-- Project 6 -->
         <article class="project-card">
           <div class="project-header">
             <h3 class="project-title">Neck Pain (NSNP) Monitor</h3>
