@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Logan Yuan — Software & Biomedical Engineering</title>
+  <title>Logan Yuan — Generalist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -183,18 +183,16 @@
             <span class="project-period" data-i18n="proj2-period">2025 – 2026</span>
           </div>
           <p class="project-desc" data-i18n="proj2-desc">
-            A cross-platform mobile expense tracking app. Captures receipts via camera, extracts
-            transaction details through Google Vision OCR, and provides AI-powered financial advice
-            via Claude API. Features JWT authentication, offline caching with auto-sync, income/expense
-            charts, and a FastAPI backend with 102 passing tests deployed on Railway.
+            A fully offline mobile expense tracking app that brings spreadsheet simplicity to a clean
+            mobile experience. Supports daily transaction logging, recurring bill automation, a monthly
+            categorical spending pivot table, and trend charts — with CSV/JSON backup and bilingual
+            EN/ZH support. Available on Android as a downloadable APK.
           </p>
           <div class="project-tags">
             <span class="tag tag-tech">React Native</span>
             <span class="tag tag-tech">Expo</span>
-            <span class="tag tag-tech">FastAPI</span>
-            <span class="tag tag-tech">PostgreSQL</span>
-            <span class="tag tag-tech">Google Vision API</span>
-            <span class="tag tag-tech">Claude API</span>
+            <span class="tag tag-tech">TypeScript</span>
+            <span class="tag tag-tech">SQLite</span>
           </div>
           <div class="project-footer">
             <a href="https://github.com/yuanq10/Centsyve" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
@@ -257,12 +255,7 @@
             <span class="tag tag-tech">CustomTkinter</span>
           </div>
           <div class="project-footer">
-            <a href="https://github.com/yuanq10/JobSearchingAgent" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
-              <span data-i18n="github-link">View on GitHub</span>
-            </a>
+            <span class="no-link-note" data-i18n="no-repo">Repository not publicly available</span>
           </div>
         </article>
 
@@ -377,6 +370,19 @@
           <span class="edu-period" data-i18n="edu-period">September 2020 – June 2025</span>
         </div>
       </div>
+      <div class="edu-card">
+        <div class="edu-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="edu-info">
+          <h3 class="edu-degree" data-i18n="edu-degree-2">High School Diploma</h3>
+          <p class="edu-school" data-i18n="edu-school-2">Bernice MacNaughton High School</p>
+          <span class="edu-period" data-i18n="edu-period-2">September 2016 – June 2020</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -453,7 +459,7 @@
         'cert-text':         'Microsoft Certified: Azure AI Fundamentals (AI-900)',
         'projects-title':    'Projects',
         'proj1-desc':        'A desktop stock monitoring application that scans a watchlist and generates buy/sell alerts based on technical analysis. Combines CCI, MACD, KDJ, and 100+ TA-Lib indicators with customizable thresholds, interactive price charts, and background processing — packaged as a standalone Windows executable.',
-        'proj2-desc':        'A cross-platform mobile expense tracking app. Captures receipts via camera, extracts transaction details through Google Vision OCR, and provides AI-powered financial advice via Claude API. Features JWT authentication, offline caching with auto-sync, income/expense charts, and a FastAPI backend with 102 passing tests deployed on Railway.',
+        'proj2-desc':        'A fully offline mobile expense tracking app that brings spreadsheet simplicity to a clean mobile experience. Supports daily transaction logging, recurring bill automation, a monthly categorical spending pivot table, and trend charts — with CSV/JSON backup and bilingual EN/ZH support. Available on Android as a downloadable APK.',
         'proj3-desc':        'A coaching tool that analyzes dragon boat paddling biomechanics using OpenCap motion capture data. Provides real-time feedback and performance insights through a Flask web interface.',
         'proj4-desc':        'A desktop application that automates job hunting across LinkedIn, Indeed, and Glassdoor. Uses Playwright for headless browser scraping and the JSearch API for aggregation, then filters results through a configurable pipeline — including AI filtering via Claude or ChatGPT — before displaying live results in a table UI with applied-job tracking.',
         'badge-inprogress':  'In Progress',
@@ -482,6 +488,9 @@
         'edu-degree':        'Bachelor of Software and Biomedical Engineering',
         'edu-school':        'McMaster University',
         'edu-period':        'September 2020 – June 2025',
+        'edu-degree-2':      'High School Diploma',
+        'edu-school-2':      'Bernice MacNaughton High School',
+        'edu-period-2':      'September 2016 – June 2020',
         'contact-title':     'Get In Touch',
         'contact-intro':     "Whether you have a question, want to collaborate, or just want to connect — my inbox is always open.",
         'contact-btn':       'Send Me an Email',
@@ -508,7 +517,7 @@
         'cert-text':         '微软认证：Azure AI 基础 (AI-900)',
         'projects-title':    '项目',
         'proj1-desc':        '一款桌面股票监控应用，可扫描自选股并基于技术分析生成买卖提醒。集成 CCI、MACD、KDJ 及 100 余种 TA-Lib 指标，支持自定义阈值、交互式价格图表与后台处理——打包为 Windows 独立可执行文件。',
-        'proj2-desc':        '一款跨平台移动端记账应用。通过摄像头拍摄小票，利用 Google Vision OCR 提取交易信息，并借助 Claude API 提供 AI 理财建议。支持 JWT 认证、离线缓存与自动同步、收支图表，后端基于 FastAPI 构建，含 102 项测试，部署于 Railway。',
+        'proj2-desc':        '一款完全离线的移动端个人记账应用，以简洁的移动体验复刻电子表格的操作逻辑。支持每日记账、定期账单自动入账、月度分类支出汇总表及消费趋势图表，提供 CSV/JSON 备份功能与中英双语界面。可通过 APK 文件在 Android 上安装使用。',
         'proj3-desc':        '一款利用 OpenCap 动作捕捉数据分析龙舟划桨生物力学的辅助工具，通过 Flask Web 界面提供实时反馈和运动表现分析。',
         'proj4-desc':        '一款自动化求职桌面应用，支持在 LinkedIn、Indeed 和 Glassdoor 上搜索职位。使用 Playwright 进行无头浏览器抓取，通过 JSearch API 聚合数据，经过可配置筛选流程（含 Claude 或 ChatGPT 的 AI 筛选）后，以表格形式实时展示结果，并支持已投递职位追踪。',
         'badge-inprogress':  '进行中',
@@ -537,6 +546,9 @@
         'edu-degree':        '软件与生物医学工程学士',
         'edu-school':        '麦克马斯特大学',
         'edu-period':        '2020年9月 – 2025年6月',
+        'edu-degree-2':      '高中文凭',
+        'edu-school-2':      'Bernice MacNaughton 高中',
+        'edu-period-2':      '2016年9月 – 2020年6月',
         'contact-title':     '联系我',
         'contact-intro':     '无论您有问题、想要合作，还是仅想交流——欢迎随时与我联系。',
         'contact-btn':       '发送邮件',
