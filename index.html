@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Logan Yuan — Generalist</title>
+  <title>Logan Yuan — AI Generalist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -67,7 +67,7 @@
       </div>
       <p class="hero-greeting" data-i18n="hero-greeting">Hi, I'm</p>
       <h1 class="hero-name" data-i18n="hero-name">Logan Yuan</h1>
-      <p class="hero-title" data-i18n="hero-title">Generalist · Mercor Intelligence</p>
+      <p class="hero-title" data-i18n="hero-title">AI Generalist · Mercor Intelligence</p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary" data-i18n="hero-btn-projects">View Projects</a>
         <a href="#contact"  class="btn btn-outline" data-i18n="hero-btn-contact">Contact Me</a>
@@ -91,15 +91,16 @@
       <div class="about-grid">
         <div class="about-bio">
           <p data-i18n="about-bio-1">
-            I'm a Software and Biomedical Engineering graduate from <strong>McMaster University</strong>,
-            currently working as a <strong>Generalist</strong> at <strong>Mercor Intelligence</strong>
+            I'm a Software and Biomedical Engineering graduate from <strong>McMaster University</strong>
+            and an <strong>AWS Certified Machine Learning Engineer – Associate</strong>, currently working
+            as an <strong>AI Generalist</strong> at <strong>Mercor Intelligence</strong>
             (Independent Contractor), contributing to next-generation AI model training and evaluation.
             I'm passionate about building intelligent software systems that solve real-world problems.
           </p>
           <p data-i18n="about-bio-2">
-            I hold a <strong>Microsoft Azure AI Fundamentals (AI-900)</strong> certification and have
-            hands-on experience with cloud platforms, machine learning frameworks, data pipelines, and
-            full-stack development across healthcare and technology domains.
+            I have hands-on experience designing and building full-stack and mobile applications, data
+            pipelines, and analytics tools in <strong>Python</strong> and <strong>TypeScript</strong>,
+            working across cloud platforms, managed ML services, and both healthcare and technology domains.
           </p>
         </div>
         <div class="about-skills">
@@ -120,20 +121,28 @@
               <span class="tag">Git</span>
               <span class="tag">Azure</span>
               <span class="tag">AWS</span>
+              <span class="tag">SageMaker</span>
               <span class="tag">Linux</span>
-              <span class="tag">PyTorch</span>
               <span class="tag">MATLAB</span>
               <span class="tag">Flask</span>
               <span class="tag">React</span>
             </div>
           </div>
           <div class="skill-group">
-            <h3 class="skill-group-title" data-i18n="skills-cert">Certification</h3>
-            <div class="cert-badge">
-              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-              <span data-i18n="cert-text">Microsoft Certified: Azure AI Fundamentals (AI-900)</span>
+            <h3 class="skill-group-title" data-i18n="skills-cert">Certifications</h3>
+            <div class="cert-list">
+              <div class="cert-badge">
+                <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <span data-i18n="cert-text">AWS Certified Machine Learning Engineer – Associate (MLA-C01)</span>
+              </div>
+              <div class="cert-badge">
+                <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <span data-i18n="cert-text-2">Microsoft Certified: Azure AI Fundamentals (AI-900)</span>
+              </div>
             </div>
           </div>
         </div>
@@ -147,42 +156,13 @@
       <h2 class="section-title" data-i18n="projects-title">Projects</h2>
       <div class="projects-grid">
 
-        <!-- Project 1: Stock Tracker -->
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Stock Tracker</h3>
-            <span class="project-period" data-i18n="proj1-period">Dec 2025 – May 2026</span>
-          </div>
-          <p class="project-desc" data-i18n="proj1-desc">
-            A desktop stock monitoring application that scans a watchlist and generates buy/sell alerts
-            based on technical analysis. Combines CCI, MACD, KDJ, and 100+ TA-Lib indicators with
-            customizable thresholds, interactive price charts, and background processing — packaged as
-            a standalone Windows executable.
-          </p>
-          <div class="project-tags">
-            <span class="tag tag-tech">Python</span>
-            <span class="tag tag-tech">CustomTkinter</span>
-            <span class="tag tag-tech">yfinance</span>
-            <span class="tag tag-tech">TA-Lib</span>
-            <span class="tag tag-tech">Matplotlib</span>
-          </div>
-          <div class="project-footer">
-            <a href="https://github.com/yuanq10/StockTracker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
-              <span data-i18n="github-link">View on GitHub</span>
-            </a>
-          </div>
-        </article>
-
-        <!-- Project 2: Centsyve -->
+        <!-- Project 1: Centsyve -->
         <article class="project-card">
           <div class="project-header">
             <h3 class="project-title">Centsyve</h3>
-            <span class="project-period" data-i18n="proj2-period">2025 – 2026</span>
+            <span class="project-period" data-i18n="proj1-period">Nov 2025 – May 2026</span>
           </div>
-          <p class="project-desc" data-i18n="proj2-desc">
+          <p class="project-desc" data-i18n="proj1-desc">
             A fully offline mobile expense tracking app that brings spreadsheet simplicity to a clean
             mobile experience. Supports daily transaction logging, recurring bill automation, a monthly
             categorical spending pivot table, and trend charts — with CSV/JSON backup and bilingual
@@ -204,13 +184,13 @@
           </div>
         </article>
 
-        <!-- Project 3: Virtual Dragon Boat Coach -->
+        <!-- Project 2: Virtual Dragon Boat Coach -->
         <article class="project-card">
           <div class="project-header">
             <h3 class="project-title">Virtual Dragon Boat Coach</h3>
-            <span class="project-period" data-i18n="proj3-period">Sep 2024 – Apr 2025</span>
+            <span class="project-period" data-i18n="proj2-period">Sep 2024 – Apr 2025</span>
           </div>
-          <p class="project-desc" data-i18n="proj3-desc">
+          <p class="project-desc" data-i18n="proj2-desc">
             A coaching tool that analyzes dragon boat paddling biomechanics using OpenCap motion
             capture data. Provides real-time feedback and performance insights through a Flask web interface.
           </p>
@@ -232,40 +212,13 @@
           </div>
         </article>
 
-        <!-- Project 4: JobCompass -->
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">
-              JobCompass
-              <span class="badge-inprogress" data-i18n="badge-inprogress">In Progress</span>
-            </h3>
-            <span class="project-period" data-i18n="proj4-period">Sep 2025 – Present</span>
-          </div>
-          <p class="project-desc" data-i18n="proj4-desc">
-            A desktop application that automates job hunting across LinkedIn, Indeed, and Glassdoor.
-            Uses Playwright for headless browser scraping and the JSearch API for aggregation, then
-            filters results through a configurable pipeline — including AI filtering via Claude or
-            ChatGPT — before displaying live results in a table UI with applied-job tracking.
-          </p>
-          <div class="project-tags">
-            <span class="tag tag-tech">Python</span>
-            <span class="tag tag-tech">Playwright</span>
-            <span class="tag tag-tech">Claude API</span>
-            <span class="tag tag-tech">SQLite</span>
-            <span class="tag tag-tech">CustomTkinter</span>
-          </div>
-          <div class="project-footer">
-            <span class="no-link-note" data-i18n="no-repo">Repository not publicly available</span>
-          </div>
-        </article>
-
-        <!-- Project 5: Gomoku -->
+        <!-- Project 3: Gomoku -->
         <article class="project-card">
           <div class="project-header">
             <h3 class="project-title">Gomoku (Connect 5)</h3>
-            <span class="project-period" data-i18n="proj5-period">Mar 2026</span>
+            <span class="project-period" data-i18n="proj3-period">Mar 2026</span>
           </div>
-          <p class="project-desc" data-i18n="proj5-desc">
+          <p class="project-desc" data-i18n="proj3-desc">
             A browser-based Gomoku game built with React. Features both Player vs Player and Player
             vs Computer modes. The AI uses minimax with alpha-beta pruning, scanning candidate moves
             near existing stones and evaluating board patterns to look 2 moves ahead.
@@ -286,13 +239,13 @@
           </div>
         </article>
 
-        <!-- Project 6: NSNP Monitor -->
+        <!-- Project 4: NSNP Monitor -->
         <article class="project-card">
           <div class="project-header">
             <h3 class="project-title">Neck Pain (NSNP) Monitor</h3>
-            <span class="project-period" data-i18n="proj6-period">Dec 2022 – Apr 2023</span>
+            <span class="project-period" data-i18n="proj4-period">Dec 2022 – Apr 2023</span>
           </div>
-          <p class="project-desc" data-i18n="proj6-desc">
+          <p class="project-desc" data-i18n="proj4-desc">
             A hardware-software system for real-time monitoring neck posture and detecting non-specific neck pain
             indicators. Built with Arduino sensors, C and Python-based data processing.
           </p>
@@ -321,7 +274,7 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role" data-i18n="exp2-role">Generalist</h3>
+                <h3 class="timeline-role" data-i18n="exp2-role">AI Generalist</h3>
                 <p class="timeline-org" data-i18n="exp2-org">Mercor Intelligence (Independent Contractor) · Remote</p>
               </div>
               <span class="timeline-period" data-i18n="exp2-period">May 2026 – Present</span>
@@ -446,35 +399,31 @@
         'nav-contact':       'Contact',
         'hero-greeting':     "Hi, I'm",
         'hero-name':         'Logan Yuan',
-        'hero-title':        'Generalist · Mercor Intelligence',
+        'hero-title':        'AI Generalist · Mercor Intelligence',
         'hero-btn-projects': 'View Projects',
         'hero-btn-contact':  'Contact Me',
         'hero-btn-resume':   'Download Resume',
         'about-title':       'About Me',
-        'about-bio-1':       "I'm a Software and Biomedical Engineering graduate from <strong>McMaster University</strong>, currently working as a <strong>Generalist</strong> at <strong>Mercor Intelligence</strong> (Independent Contractor), contributing to next-generation AI model training and evaluation. I'm passionate about building intelligent software systems that solve real-world problems.",
-        'about-bio-2':       "I hold a <strong>Microsoft Azure AI Fundamentals (AI-900)</strong> certification and have hands-on experience with cloud platforms, machine learning frameworks, data pipelines, and full-stack development across healthcare and technology domains.",
+        'about-bio-1':       "I'm a Software and Biomedical Engineering graduate from <strong>McMaster University</strong> and an <strong>AWS Certified Machine Learning Engineer – Associate</strong>, currently working as an <strong>AI Generalist</strong> at <strong>Mercor Intelligence</strong> (Independent Contractor), contributing to next-generation AI model training and evaluation. I'm passionate about building intelligent software systems that solve real-world problems.",
+        'about-bio-2':       "I have hands-on experience designing and building full-stack and mobile applications, data pipelines, and analytics tools in <strong>Python</strong> and <strong>TypeScript</strong>, working across cloud platforms, managed ML services, and both healthcare and technology domains.",
         'skills-languages':  'Languages',
         'skills-tools':      'Tools &amp; Frameworks',
-        'skills-cert':       'Certification',
-        'cert-text':         'Microsoft Certified: Azure AI Fundamentals (AI-900)',
+        'skills-cert':       'Certifications',
+        'cert-text':         'AWS Certified Machine Learning Engineer – Associate (MLA-C01)',
+        'cert-text-2':       'Microsoft Certified: Azure AI Fundamentals (AI-900)',
         'projects-title':    'Projects',
-        'proj1-desc':        'A desktop stock monitoring application that scans a watchlist and generates buy/sell alerts based on technical analysis. Combines CCI, MACD, KDJ, and 100+ TA-Lib indicators with customizable thresholds, interactive price charts, and background processing — packaged as a standalone Windows executable.',
-        'proj2-desc':        'A fully offline mobile expense tracking app that brings spreadsheet simplicity to a clean mobile experience. Supports daily transaction logging, recurring bill automation, a monthly categorical spending pivot table, and trend charts — with CSV/JSON backup and bilingual EN/ZH support. Available on Android as a downloadable APK.',
-        'proj3-desc':        'A coaching tool that analyzes dragon boat paddling biomechanics using OpenCap motion capture data. Provides real-time feedback and performance insights through a Flask web interface.',
-        'proj4-desc':        'A desktop application that automates job hunting across LinkedIn, Indeed, and Glassdoor. Uses Playwright for headless browser scraping and the JSearch API for aggregation, then filters results through a configurable pipeline — including AI filtering via Claude or ChatGPT — before displaying live results in a table UI with applied-job tracking.',
-        'badge-inprogress':  'In Progress',
-        'proj5-desc':        'A browser-based Gomoku game built with React. Features both Player vs Player and Player vs Computer modes. The AI uses minimax with alpha-beta pruning, scanning candidate moves near existing stones and evaluating board patterns to look 2 moves ahead.',
-        'proj6-desc':        'A hardware-software system for real-time monitoring neck posture and detecting non-specific neck pain indicators. Built with Arduino sensors, C and Python-based data processing.',
-        'proj1-period':      'Dec 2025 – May 2026',
-        'proj2-period':      '2025 – 2026',
-        'proj3-period':      'Sep 2024 – Apr 2025',
-        'proj4-period':      'Sep 2025 – Present',
-        'proj5-period':      'Mar 2026',
-        'proj6-period':      'Dec 2022 – Apr 2023',
+        'proj1-desc':        'A fully offline mobile expense tracking app that brings spreadsheet simplicity to a clean mobile experience. Supports daily transaction logging, recurring bill automation, a monthly categorical spending pivot table, and trend charts — with CSV/JSON backup and bilingual EN/ZH support. Available on Android as a downloadable APK.',
+        'proj2-desc':        'A coaching tool that analyzes dragon boat paddling biomechanics using OpenCap motion capture data. Provides real-time feedback and performance insights through a Flask web interface.',
+        'proj3-desc':        'A browser-based Gomoku game built with React. Features both Player vs Player and Player vs Computer modes. The AI uses minimax with alpha-beta pruning, scanning candidate moves near existing stones and evaluating board patterns to look 2 moves ahead.',
+        'proj4-desc':        'A hardware-software system for real-time monitoring neck posture and detecting non-specific neck pain indicators. Built with Arduino sensors, C and Python-based data processing.',
+        'proj1-period':      'Nov 2025 – May 2026',
+        'proj2-period':      'Sep 2024 – Apr 2025',
+        'proj3-period':      'Mar 2026',
+        'proj4-period':      'Dec 2022 – Apr 2023',
         'github-link':       'View on GitHub',
         'no-repo':           'Repository not publicly available',
         'exp-title':         'Experience',
-        'exp2-role':         'Generalist',
+        'exp2-role':         'AI Generalist',
         'exp2-org':          'Mercor Intelligence (Independent Contractor) · Remote',
         'exp2-period':       'May 2026 – Present',
         'exp2-bullet-1':     'Collaborated on projects advancing next-generation AI models by providing structured expertise for model training and evaluation initiatives.',
@@ -504,35 +453,31 @@
         'nav-contact':       '联系我',
         'hero-greeting':     '你好，我是',
         'hero-name':         '袁启航',
-        'hero-title':        '通才 · Mercor Intelligence',
+        'hero-title':        'AI 通才 · Mercor Intelligence',
         'hero-btn-projects': '查看项目',
         'hero-btn-contact':  '联系我',
         'hero-btn-resume':   '下载简历',
         'about-title':       '关于我',
-        'about-bio-1':       '我是<strong>麦克马斯特大学</strong>软件与生物医学工程专业毕业生，目前担任 <strong>Mercor Intelligence</strong> 的<strong>通才</strong>（独立承包人），参与推进下一代 AI 模型的训练与评估工作。我热衷于构建能解决真实世界问题的智能软件系统。',
-        'about-bio-2':       '我持有<strong>微软 Azure AI 基础 (AI-900)</strong> 认证，在云平台、机器学习框架、数据管道及全栈开发方面积累了丰富的实践经验，涵盖医疗健康与科技领域。',
+        'about-bio-1':       '我是<strong>麦克马斯特大学</strong>软件与生物医学工程专业毕业生，并持有 <strong>AWS 认证机器学习工程师 – 助理级</strong>认证，目前担任 <strong>Mercor Intelligence</strong> 的 <strong>AI 通才</strong>（独立承包人），参与推进下一代 AI 模型的训练与评估工作。我热衷于构建能解决真实世界问题的智能软件系统。',
+        'about-bio-2':       '我在使用 <strong>Python</strong> 与 <strong>TypeScript</strong> 设计并构建全栈及移动端应用、数据管道与分析工具方面积累了丰富的实践经验，涉及云平台、托管机器学习服务，以及医疗健康与科技领域。',
         'skills-languages':  '编程语言',
         'skills-tools':      '工具与框架',
         'skills-cert':       '认证',
-        'cert-text':         '微软认证：Azure AI 基础 (AI-900)',
+        'cert-text':         'AWS 认证机器学习工程师 – 助理级 (MLA-C01)',
+        'cert-text-2':       '微软认证：Azure AI 基础 (AI-900)',
         'projects-title':    '项目',
-        'proj1-desc':        '一款桌面股票监控应用，可扫描自选股并基于技术分析生成买卖提醒。集成 CCI、MACD、KDJ 及 100 余种 TA-Lib 指标，支持自定义阈值、交互式价格图表与后台处理——打包为 Windows 独立可执行文件。',
-        'proj2-desc':        '一款完全离线的移动端个人记账应用，以简洁的移动体验复刻电子表格的操作逻辑。支持每日记账、定期账单自动入账、月度分类支出汇总表及消费趋势图表，提供 CSV/JSON 备份功能与中英双语界面。可通过 APK 文件在 Android 上安装使用。',
-        'proj3-desc':        '一款利用 OpenCap 动作捕捉数据分析龙舟划桨生物力学的辅助工具，通过 Flask Web 界面提供实时反馈和运动表现分析。',
-        'proj4-desc':        '一款自动化求职桌面应用，支持在 LinkedIn、Indeed 和 Glassdoor 上搜索职位。使用 Playwright 进行无头浏览器抓取，通过 JSearch API 聚合数据，经过可配置筛选流程（含 Claude 或 ChatGPT 的 AI 筛选）后，以表格形式实时展示结果，并支持已投递职位追踪。',
-        'badge-inprogress':  '进行中',
-        'proj5-desc':        '基于 React 构建的浏览器端五子棋游戏，支持双人对战与人机对战模式。AI 采用带 Alpha-Beta 剪枝的 Minimax 算法，通过扫描现有棋子附近的候选位置并评估棋盘格局，实现 2 步前瞻。',
-        'proj6-desc':        '一套用于实时监测颈部姿态、检测非特异性颈痛指标的硬件-软件系统，基于 Arduino 传感器，结合 C 语言和 Python 进行数据处理。',
-        'proj1-period':      '2025年12月 – 2026年5月',
-        'proj2-period':      '2025年 – 2026年',
-        'proj3-period':      '2024年9月 – 2025年4月',
-        'proj4-period':      '2025年9月 – 至今',
-        'proj5-period':      '2026年3月',
-        'proj6-period':      '2022年12月 – 2023年4月',
+        'proj1-desc':        '一款完全离线的移动端个人记账应用，以简洁的移动体验复刻电子表格的操作逻辑。支持每日记账、定期账单自动入账、月度分类支出汇总表及消费趋势图表，提供 CSV/JSON 备份功能与中英双语界面。可通过 APK 文件在 Android 上安装使用。',
+        'proj2-desc':        '一款利用 OpenCap 动作捕捉数据分析龙舟划桨生物力学的辅助工具，通过 Flask Web 界面提供实时反馈和运动表现分析。',
+        'proj3-desc':        '基于 React 构建的浏览器端五子棋游戏，支持双人对战与人机对战模式。AI 采用带 Alpha-Beta 剪枝的 Minimax 算法，通过扫描现有棋子附近的候选位置并评估棋盘格局，实现 2 步前瞻。',
+        'proj4-desc':        '一套用于实时监测颈部姿态、检测非特异性颈痛指标的硬件-软件系统，基于 Arduino 传感器，结合 C 语言和 Python 进行数据处理。',
+        'proj1-period':      '2025年11月 – 2026年5月',
+        'proj2-period':      '2024年9月 – 2025年4月',
+        'proj3-period':      '2026年3月',
+        'proj4-period':      '2022年12月 – 2023年4月',
         'github-link':       '在 GitHub 上查看',
         'no-repo':           '代码库未公开',
         'exp-title':         '工作经历',
-        'exp2-role':         '通才（独立承包人）',
+        'exp2-role':         'AI 通才（独立承包人）',
         'exp2-org':          'Mercor Intelligence · 远程',
         'exp2-period':       '2026年5月 – 至今',
         'exp2-bullet-1':     '参与推进下一代 AI 模型的项目，通过提供结构化专业知识支持模型训练与评估工作。',
